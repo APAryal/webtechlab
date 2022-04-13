@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>table form </title>
+
+    </head>
+    <body>
+        <form action="action.php" method="post">
+            <table border="1" cellspacing="0" cellpadding="5px" align="center">
+                <tr>
+                    <th>Date: <input type="date"/></th>
+                    <th colspan="3">SALES BILL</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> Vendor: <textarea></textarea></td>
+                    <td colspan="2"> Shipping address: <textarea></textarea></td>
+                </tr>
+                <tr>
+                    <th>Item code</th>
+                    <th>Qty</th>
+                    <th>Price per unit</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="code" name="code">
+                        <option value="">-Select Code-</option>
+                        <option value ="2234">2234</option>
+                        <option value ="5569">5569</option>
+                        <option value ="8765">6528</option>
+                        <option value ="1023">1023</option>
+                        <option value ="8974">8974</option>
+                        </select>
+                </td>
+                <td><input type="number"/></td>
+                <td><input type="number"/></td>
+                <td><input type="number"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="code" name="code">
+                        <option value="">-Select Code-</option>
+                        <option value ="5478">5478</option>
+                        <option value ="3321">3321</option>
+                        <option value ="1564">1564</option>
+                        <option value ="4987">4987</option>
+                        <option value ="7763">7763</option>
+                        </select>
+                    </td>
+                    <td><input type="number"/></td>
+                    <td><input type="number"/></td>
+                    <td><input type="number"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">SubTotal</td>
+                    <td><input type="number"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">Tax &emsp; &emsp;<input type="number"/></td>
+                    <td><input type="number"/></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">Total</td>
+                    <td><input type="number"/></td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
+
