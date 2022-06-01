@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            .form-ap {
+              background-color: aquamarine;
+              color: blueviolet;
+              padding: 50px;
+              margin:100px;
+            }
+            .form-ab {
+                background-color:greenyellow;
+              display: flex;
+              justify-content: flex-start;
+              padding: .2em;
+            }
+            .wx{
+            
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .wt{
+                background-color: darkgreen;
+                color: yellow;
+            }
+            .qr{
+                background-color:black;
+                width: 40px;
+                height: 40px;
+            }
+        
+          </style>
+    </head>
+    <body>
+        <form method="post">
+            <ul class="form-ap">
+                <li class="form-ab">
+                    <label for="name">Username* : </label>
+                    <input class="qr" type="text" name="name" id="name">
+                </li>
+
+                <li class="form-ab">
+                    <label for="email">Email* : </label>
+                    <input class="qr" type="email" name="email" id="email">
+                </li>
+
+                <li class="form-ab">
+                    <label for="password">Password* : </label>
+                    <input class="qr" type="password" name="password" id="password">
+                </li>
+
+                <li class="form-ab">
+                    <label for="repassword">Re-password* : </label>
+                    <input class="qr" type="password" name="repassword" id="repassword">
+                </li>
+
+                <li class="form-ab">
+                    <label for="number">Phone number* : </label>
+                    <input class="qr" type="number" name="number" id="number">        
+                </li>
+                <li class="wx">
+                    <input class="wt"  type="submit" value="Submit" id="submit">
+                    <input class="wt" type="reset" name="Reset" id="reset">
+                </li>
+            </ul>
+        </form>
+        <script>
+            document.getElementById("name").onblur= validateName;
+           function validateName() {
+                 var name = document.getElementById("name").value;
+                 if (name == "") {
+                     alert("Username cannot be empty");
+                     return false;
+                }
+                 else {
+                     if(name.length>=3 && name.length<=10) {
+                     var pos = name.search(/^[a-zA-Z0-9]{3,10}$/);
+                    if (pos == -1) {
+                    alert("Error! Enter a valid name.");
+                     return false;
+                   } 
+                   else {
+                     console.log("Your name is valid.");
+                    return true;
+                   }
+                }
+                   else{
+                       alert("Your name must contain 3-10 characters.")
+                       return false;
+                   }
+
+        }
+      }
+
+     document.getElementById("email").onblur= validatemail;
+    function validatemail() {
+         var email= document.getElementById("email").value;
+            if (email== "") {
+                alert("Email cannot be empty");
+                return false;
+            }
+             else {
+               var pos = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+              if (pos == -1) {
+                alert("Error! Enter a valid email address.");
+                return false;
+            } 
+             else {
+              console.log("Your email is valid.");
+              return true;
+            } 
+        }
+    }
+    document.getElementById("password").onblur= validatepassword;
+        function validatepassword() {
+         var password= document.getElementById("password").value;
+            if (password== "") {
+              alert("Password cannot be empty");
+              return false;
+            }
+             else {
+                 if(password.length>=8 && password.length<=20) { 
+                   var pos = password.search(/^[a-zA-Z0-9]{8,20}$/);
+                   if (pos == -1) {
+                     alert("Error! Enter a valid password.");
+                     return false;
+                    } 
+                   else {
+                    console.log("Your password is valid.");
+                    return true;
+                    }
+                }  
+                 else{
+                    alert("Your password must contain atleast 8 characters.");
+                    return false;
+                } 
+            }
+        }
+    document.getElementById("repassword").onblur= validaterepassword;
+    function validaterepassword() {
+        var password= document.getElementById("password").value;
+         var repasssword= document.getElementById("repassword").value;
+         console.log(password, repasssword);
+        if(password=="")
+        {
+            alert("Please! enter your password.");
+        }
+        else if(repasssword=="")
+        {
+            alert("Error! re-password cannot be empty.");
+            return false;
+        }
+        else{
+            if(password.localeCompare(repasssword)==0)
+            {
+                console.log("Password matched.");
+            }
+            else{
+                alert("Password didn't match.");
+            }
+        }
+    } 
+    document.getElementById("number").onblur= validatenumber;
+    function validatenumber(){  
+        var number= document.getElementById("number").value; 
+        if(number==""){
+            alert("Number section can't be empty.");
+        }
+        else{
+           if(number.length==10){
+              var position=number.search(/^(98\d{8})$/);
+              if(position==0){
+                  console.log("Your number is valid");
+                }
+              else{
+                    alret("Enter valid phone number.");
+                }
+            }
+            else{
+              alert("Phone number must be of 10 digits.");
+
+           }   
+       }
+    }
+    </script>
+</body>
+</html
