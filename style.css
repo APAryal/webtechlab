@@ -1,0 +1,112 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav_bar{
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.nav_details{
+	display: flex;
+
+}
+li{
+	list-style: none;
+}
+.link{
+	text-decoration: none;
+	margin-right: 30px;
+	font-size: 22px;
+	font-weight: bold;
+	color:palegreen;
+}
+.btn{
+	margin-top: -2px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 18px;
+	padding-right: 18px;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	margin-right: 40px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.title{
+	font-size: 40px;
+	
+	margin-left: 50px;
+}
+.link:hover{
+	color: blueviolet;
+	text-decoration:underline;
+	color: red;
+}
+.home{
+	display:flex;
+}
+.my{
+	margin-right: 50px;
+	margin-left: 25px;
+}
+.my_details{
+	
+	width: 40vw;
+	margin-left: 185px;
+	margin-top: 123px;
+}
+.image{
+
+	width: 60px;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+.my_image{
+	background:blue;
+	height: 300px;
+	width: 200px;
+}
+.hm_section{
+	padding-top: 100px;
+	background-color: antiquewhite;
+	height: 78vh;
+}
+.name{
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+.ap{
+	color: red;
+}
+.who{
+	font-size: 40px;
+	margin-bottom: 12px;
+}
+.desc{
+	font-size: 25px;
+}
+.btn_grp{
+	margin-top: 40px;
+	margin-left: 20px;
+}
+.about_me{
+	font-size: 20px;
+	
+}
+.about_me:hover{
+	background-color: gray;
+	color: black;
+}
+.hire{
+	font-size: 20px;
+}
+.hire:hover{
+	background-color: gray;
+	color: black;
+}
