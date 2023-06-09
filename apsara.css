@@ -1,0 +1,128 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav article"
+    "nav ads"
+    "footer footer";
+   
+    grid-template-rows: 80px 1fr 1fr 70px;  
+    grid-template-columns: 20% 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+    div, div, div, div, div {
+        padding: 1.2em;
+        background: rgb(136, 45, 80);
+        }
+        #pageheader {
+            grid-area: header;
+            }
+          #footer {
+            grid-area: footer;
+            }
+          #maincontent { 
+            grid-area: article;      
+            }
+          #member { 
+            grid-area: nav; 
+            }
+          #extracontant { 
+            grid-area: ads; 
+            }
+            /* Stack the layout on small devices/viewports. */
+ @media all and (max-width: 575px) {
+    body { 
+      grid-template-areas: 
+        "header"
+        "maincontent"
+        "extracontant"
+        "member"
+        "footer";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+   }
+  } 
+
+
+  .logout{
+    list-style-type:none; 
+  
+    margin-left:300 px; 
+     margin-top:20px;
+    position:relative; 
+    left:80%;
+   
+}
+li{
+    list-style-type:none; 
+}
+
+
+.header{
+   
+ text-transform:inherit;
+     left: 50%;
+    position:absolute;
+        top: 10px;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(87, 12, 58);
+ 
+}  
+
+        
+  /* div.scroll {
+    background-color: #fed9ff;
+     width: 95%;  
+     height: 90%; 
+    overflow-x: hidden;
+    overflow-y: auto;
+     text-align: center; 
+    padding: 20px;
+   } */
+
+
+   .image{
+    height:50px;
+    width:50px;
+    border-radius:50% ;
+    
+
+}
+.member{
+    border-top:2px solid rgb(2, 9, 1);
+    border-bottom:2px solid rgb(2, 9, 1);
+}
+   p{
+    width: 50%;
+}
+.text1{
+display: flex;    
+}
+.p1{
+  display: flex;    
+}
+.project1{
+    position:absolute;
+    margin-bottom:40px;
+    left:40%;
+    border-bottom: 3px solid rgb(10, 2, 15);
+    font-family:'Times New Roman', Times, serif;
+      display:block;
+     width:110px; 
+     
+    
+}
+    
+ 
+
+ .button1{
+    list-style-type:none; 
+    margin-left:300 px; 
+    margin-top:20px;
+   position:relative; 
+   left:70%
+}
