@@ -1,0 +1,202 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .group1 {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 6;
+  }
+  
+  .group2 {
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 3 /span 4;
+    grid-row: 3 /span 3;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 6;
+    color: tomato;
+   margin-top:50px;
+  }
+  
+  .item2 {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 4;
+    color: tomato;
+  }
+  
+  .item3 {
+    grid-column: 3 / span 4;
+    color: tomato;
+    
+   
+  }
+  
+  .item4 {
+    grid-column: 1 /span 6;
+    grid-row: 1;
+  }
+  
+  .item5 {
+    grid-column: 1/span 6;
+    color: tomato;
+  }
+  
+  .item6 {
+    grid-column: 1/ span 6;
+    color: tomato;
+  }
+  using scroll bar in div*/
+   .item item1 {
+    background-color: rgb(116, 8, 138);
+    height: 40px;
+    width: 200px;
+    overflow-y: scroll;
+
+  }
+ 
+  
+  [class^=item] {
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(2vh + 2vw);
+    background: rgb(96, 10, 10);
+    min-height:20vh
+  }
+ .scroll{
+    margin:4px, 4px;
+    padding:4px;
+    
+     width: 400px; 
+    height: 600px;
+     overflow-x: hidden; 
+    overflow-y: auto;
+     text-align:justify; 
+
+} 
+  .scroll1{
+    display: flex; 
+  
+     width:700px; 
+    height:195px;
+     overflow-x: hidden; 
+    overflow-y: auto;
+  }
+  .scroll2{
+    /* background-color: rgb(51, 3, 66); */
+     width:700px; 
+    height:125px;
+     /* overflow-x: hidden;  */
+    overflow-y: auto;
+  }
+  .scroll3{
+    /* background-color: rgb(51, 3, 66); */
+     width:700px; 
+    height:125px;
+     /* overflow-x: hidden;  */
+    overflow-y: auto;
+  }
+  .scroll4{
+    /* background-color: rgb(51, 3, 66); */
+     width:700px; 
+    height:125px;
+     /* overflow-x: hidden;  */
+    overflow-y: auto;
+  }
+  .logo{
+  margin-right: 900px;
+  }
+  .logout{
+    list-style-type:none; 
+  
+    margin-left:300 px; 
+     margin-top:20px;
+    position:relative; 
+    
+   
+}
+li{
+    list-style-type:none; 
+}
+
+
+.header{
+    /* bottom: 400px;  */
+    margin-bottom:50px;
+ /* text-transform:inherit; */
+ 
+     left: 50%; 
+     position:absolute; 
+        
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(87, 12, 58);
+ 
+}  
+.image{
+  height:50px;
+  width:50px;
+  border-radius:50% ;
+  
+  
+
+}
+.member{
+  text-align: center;
+  border-top:2px solid rgb(13, 80, 4);
+  border-bottom:2px solid rgb(34, 106, 24);
+}
+.about{
+    margin-right:530px;   
+    /* margin-bottom: 150px; */
+    
+    
+
+}
+.skill{
+  margin-right:550px; 
+  
+}
+.education{
+  margin-right:450px; 
+ 
+}
+.button1{
+   /* position:relative; */
+  margin-top:170px;
+  margin-left:500px;
+ 
+}
+.image1{
+   position:relative; 
+  width:100px;
+  height:100px;
+  border-radius: 50%; 
+    margin-top: 100px;  
+  /* bottom:auto;  */
+    
+  
+} 
+.button2{
+  margin-top:60px;
+  margin-left:620px;
+}
+.button3{
+  margin-top:60px;
+  margin-left:630px;
+}
+.button4{
+   margin-top:60px; 
+  margin-left:600px;
+}
+
+
+@media screen and (max-width:600px)
+{
+  
+}
